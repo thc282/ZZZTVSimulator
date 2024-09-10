@@ -16,7 +16,12 @@ tr, td{
 
 td {
     width: calc(100% / 6);
+<<<<<<< HEAD
     height: calc(100% / 4);  
+=======
+    height: calc(100% / 4);
+    
+>>>>>>> 8ad654f8373bc62e0dba82ec3b47a262caaa71bc
 }
 
 img {
