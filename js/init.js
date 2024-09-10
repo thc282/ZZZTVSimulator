@@ -1,7 +1,7 @@
-const rows = 4;
-const cols = 6;
-document.addEventListener('DOMContentLoaded', () => {
-    const table = document.getElementById('gifTable');
+export function initializeTable() {
+    const rows = 4;
+    const cols = 6;
+    const table = document.getElementById('bangbooTV');
     
     // 生成表格
     for (let i = 0; i < rows; i++) {
@@ -23,15 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (i === randomRow && j === randomCol) {
                 // 隨機單元格的不同GIF
-                img.src = './assests/bangboo_idle.gif';
-                img.alt = '不同的GIF';
+                img.src = './assets/bangboo_idle.gif';
+                img.alt = '邦布GIF';
             } else {
                 // 普通單元格的GIF
                 img.src = 'https://example.com/different.gif';
-                img.alt = '普通GIF';
+                img.alt = '空白GIF';
             }
             
             cell.appendChild(img);
         }
     }
-});
+};
