@@ -24,14 +24,16 @@ export function initializeTable() {
             if (i === randomRow && j === randomCol) {
                 // 隨機單元格的不同GIF
                 img.src = './assets/bangboo_idle.gif';
-                img.alt = '邦布GIF';
+                img.alt = 'Bangboo';
             } else {
                 // 普通單元格的GIF
-                img.src = 'https://example.com/different.gif';
+                img.src = '.assets/blank.gif';
                 img.alt = '空白GIF';
             }
             
             cell.appendChild(img);
         }
     }
+
+    return {pos: {row: randomRow, col: randomCol}};
 };
