@@ -27,7 +27,7 @@ export function initializeTable() {
                 img.alt = 'Bangboo';
             } else {
                 // 普通單元格的GIF
-                img.src = '.assets/blank.gif';
+                img.src = './assets/blankTV.gif';
                 img.alt = '空白GIF';
             }
             
